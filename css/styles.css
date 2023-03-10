@@ -49,24 +49,6 @@ img {
 }
 /*To reset properties*/
 
-/*Current for header*/
-.header-list .current .header-link {
-	position: relative;
-	color: var(--button-portfolio-hover-color);
-}
-.current::after {
-	content: "";
-	display: block;
-	position: absolute;
-	width: 100%;
-	height: 4px;
-	background-color: var(--button-portfolio-hover-color);
-	border-radius: 2px;
-	bottom: 0;
-	left: 0;
-}
-/*Current for header*/
-
 /*Section Padding*/
 .section {
 	padding: 120px 0;
@@ -126,6 +108,25 @@ img {
 .header-link:is(:hover, :focus) {
 	color: var(--accent-text-color-two);
 }
+
+/*Current for header*/
+.current {
+	color: var(--button-portfolio-hover-color);
+}
+.current::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 4px;
+	bottom: 0;
+	left: 0;
+
+	background: var(--button-portfolio-hover-color);
+	border-radius: 2px;
+}
+/*Current for header*/
+
 .header-address {
 	margin-left: auto;
 }
