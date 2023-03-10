@@ -12,6 +12,7 @@
 	--modal-background-color: #fcfcfc;
 }
 /*Colors*/
+
 h1,
 h2,
 h3,
@@ -46,7 +47,11 @@ body {
 img {
 	display: block;
 }
-.current {
+/*To reset properties*/
+
+/*Current for header*/
+.header-list .current .header-link {
+	position: relative;
 	color: var(--button-portfolio-hover-color);
 }
 .current::after {
@@ -60,14 +65,16 @@ img {
 	bottom: 0;
 	left: 0;
 }
-/*To reset properties*/
+/*Current for header*/
 
+/*Section Padding*/
 .section {
 	padding: 120px 0;
 }
 .section-about {
 	padding-top: 120px;
 }
+/*Section Padding*/
 
 /* Header-Style */
 .header {
@@ -149,7 +156,6 @@ img {
 .header-item-two .header-link-two {
 	font-style: normal;
 }
-
 /* Header-Style */
 
 /* Hero-Section-Style */
@@ -195,6 +201,8 @@ img {
 .hero-button:is(:hover, :focus) {
 	background: var(--button-portfolio-hover-color);
 }
+
+/* Modal */
 .backdrop {
 	position: fixed;
 	top: 0;
@@ -248,6 +256,8 @@ img {
 	background: var(--button-portfolio-hover-color);
 	fill: currentColor;
 }
+/* Modal */
+
 /* Hero-Section-Style */
 
 /* About-Section-Style */
@@ -431,7 +441,9 @@ img {
 	border: 1px solid var(--accent-text-color-two);
 	fill: currentColor;
 }
-/* footer-Style */
+/* Customers-Section-Style */
+
+/* Footer-Style */
 .footer {
 	background-color: var(--accent-text-color);
 	padding: 100px 0;
@@ -493,9 +505,10 @@ img {
 .footer-section-social-img:is(:hover, :focus) {
 	background: var(--hover-focus-icon-footer);
 }
-/* footer-Style */
+/* Footer-Style */
 
 /* Portfolio HTML */
+
 /* Hero-Portfolio-Style */
 .hero-portf-list {
 	display: flex;
@@ -598,4 +611,5 @@ img {
 	border-bottom: 1px solid #e7e9fc;
 }
 /* Service-Portfolio-Style */
+
 /* Portfolio HTML */
